@@ -1,3 +1,8 @@
+<?php
+    if(isset($_GET['page'])){
+        $page = $_GET['page'];
+    }
+?>
 <!doctype html>
 <html lang="en" data-bs-theme="dark">
 
@@ -35,16 +40,14 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link <?php if ($page == 'home' || $page == 0) {
+                            <a class="nav-link <?php if ($page == 'home' || $page == '') {
                                 echo 'active';
-                            } ?>"
-                                aria-current="page" href="?"><i class="fa-solid fa-house"></i>&nbsp;หน้าแรก</a>
+                            } ?>" aria-current="page" href="?"><i class="fa-solid fa-house"></i>&nbsp;หน้าแรก</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link <?php if ($page == 'popular') {
                                 echo 'active';
-                            } ?>"
-                                href="?page=popular"><i class="fa-solid fa-fire"></i>&nbsp;ยอดนิยม</a>
+                            } ?>" href="?page=popular"><i class="fa-solid fa-fire"></i>&nbsp;ยอดนิยม</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
