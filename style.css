@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* body {} ในส่วนนี้คือตกแต่งในส่วนพื้นหลังเว็บ อารมแบบเราวาดเขียนปรับขนาดกระดาษ */
+/* a {} คือตกแต่งข้อความลิงค์ */
+/* ------------------------------------------------------------------------ */
+/* margin คือ ความกว้างขอบเขต */
+/* padding คือ ความกว้างภายใน */
+/* font family คือ กำหนดฟ้อนเว็บ */
+/* background คือ กำหนดพื้นหลัง */
+/* border-radius คือ ความโค้งของมุม */
+/* display คือรูปแบบการแสดงผล */
+/* text-decoration คือ เส้นใต้ข้อความ */
+/* transition คือ กำหนดระยะเวลาอเมชั่นตอนเปลี่ยนแปลง */
+/* font-weight กำหนดรูปแบบความใหญ่ ความบาง ตัวหนังสือ */
+/* border-bottom คือกำหนดขอบ */
+/* border-bottom คือกำหนดขอบด้านล่าง */
+/* padding-bottom คือกำหนดความกว้างด้านล่างข้างใน */
+/* text-shadow คือกำหนดเงา */
+
+body {
+    margin: 0;
+    padding: 0.5rem;
+    font-family: 'Kanit', sans-serif;
+    background: rgb(29, 28, 39);
+}
+
+/* ส่วนนี้จะเป็นการตกแต่ง Navbar */
+.navbar {
+    background: transparent !important;
+    border-radius: 1rem;
+}
+
+.navbar a {
+    display: block;
+    text-decoration: none;
+    transition: 0.2s;
+    font-weight: 600;
+}
+
+/* ส่วนนี้จะเป็นการตกแต่งปุ่มตัวเลือกประเภท */
+.dropdown-menu {
+    background: rgb(29, 28, 39);
+    border-radius: 1rem;
+}
+
+.dropdown-menu a:hover {
+    background: rgb(23, 23, 32);
+}
+
+.navbar-brand {
+    font-weight: 800 !important;
+}
+
+/* ส่วนนี้จะเป็นการตกแต่ง Card */
+
+.card {
+    border: 0;
+    border-radius: 1rem;
+    background-color: transparent;
+}
+
+.card .card-body {
+    padding: 2rem;
+}
+
+.card .card-title {
+    color: #e8e6fd;
+    font-weight: 700;
+}
+
+.card .card-subtitle {
+    color: #9290a7;
+    font-weight: 400;
+    border-bottom: 2px solid #e8e6fd20;
+    padding-bottom: 1rem;
+}
+
+/* opacity คือกำหนดความจาง */
+.card-img-top {
+    padding: 1rem;
+    border-radius: 2rem;
+    opacity: 0.2;
+}
+
+.card-novel {
+    background: rgb(26, 26, 36);
+    transition: 0.2s;
+}
+
+.card-novel:hover {
+    background: rgb(33, 32, 46);
+    transform: scale(1.1);
+}
+
+/* ส่วนนี้จะเป็นการตกแต่งช่องใส่ข้อความ */
+
+.form-control {
+    border-radius: 1rem;
+    border: none;
+    background: rgb(34, 33, 46);
+    box-shadow: none;
+    transition: 0.2s;
+}
+
+.form-control:hover, .form-control:focus {
+    border-radius: 1rem;
+    border: none;
+    background: rgb(23, 22, 31);
+    box-shadow: none;
+}
+
+/* ส่วนนี้จะเป็นการตกแต่งปุ่ม */
+
+.btn-noverse {
+    background: rgb(99, 87, 236) !important;
+    font-weight: 600;
+    border-radius: 1rem;
+    color: #e8e6fd !important;
+}
+
+.btn-noverse:hover {
+    background: rgb(92, 81, 219) !important;
+    color: #e8e6fd !important;
+}
